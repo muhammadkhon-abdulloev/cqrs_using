@@ -1,6 +1,6 @@
 using Application.Common.Interfaces;
 
-namespace Application.City.Commands.CreateCity;
+namespace Application.Features.Cities.Commands.CreateCity;
 
 public record CreateCityCommand : IRequest<int>
 {

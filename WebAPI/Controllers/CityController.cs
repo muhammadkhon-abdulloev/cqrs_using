@@ -1,6 +1,6 @@
-using Application.City.Commands.CreateCity;
-using Application.City.Queries.GetCitiesWithPagination;
+using Application.City.Queries.GetCities;
 using Application.Common.Models;
+using Application.Features.Cities.Commands.CreateCity;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

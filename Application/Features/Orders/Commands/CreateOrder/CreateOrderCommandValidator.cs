@@ -1,6 +1,6 @@
 using Application.Common.Interfaces;
 
-namespace Application.Order.Commands.CreateOrder;
+namespace Application.Features.Orders.Commands.CreateOrder;
 
 public class CreateOrderCommandValidator: AbstractValidator<CreateOrderCommand>
 {

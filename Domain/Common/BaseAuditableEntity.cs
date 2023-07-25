@@ -1,9 +1,7 @@
-using System.ComponentModel.DataAnnotations.Schema;
-
 namespace Domain.Common;
 
 public class BaseAuditableEntity: BaseEntity
 {
-    [Column("created_at")]
+    public int Id { get; set; }
     public DateTime CreatedAt { get; set; }
 }

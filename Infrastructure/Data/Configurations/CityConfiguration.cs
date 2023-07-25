@@ -11,5 +11,6 @@ public class CityConfiguration : IEntityTypeConfiguration<City>
         etp.HasIndex(c => c.Id).IsUnique().HasDatabaseName("OrderIdIndex");
         etp.Property(c => c.Id).HasColumnName("id").IsRequired();
         etp.Property(c => c.Name).HasColumnName("name").IsRequired();
+        etp.Property(c => c.CreatedAt).HasColumnName("created_at").HasColumnType("timestamptz").HasDefaultValue(DateTime.UtcNow);
     }
 }

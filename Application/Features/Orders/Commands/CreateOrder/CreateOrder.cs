@@ -1,7 +1,7 @@
 using Application.Common.Interfaces;
 using Domain.Events;
 
-namespace Application.Order.Commands.CreateOrder;
+namespace Application.Features.Orders.Commands.CreateOrder;
 
 public record CreateOrderCommand: IRequest<int>
 {

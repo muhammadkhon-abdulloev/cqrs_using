@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations.Schema;
 using Domain.Common;
 
 namespace Domain.Entities;
@@ -6,7 +5,6 @@ namespace Domain.Entities;
 [Table("order")]
 public class Order: BaseAuditableEntity
 {
-    public int Id { get; set; }
     public int SenderCityId { get; set; }
     public City SenderCity { get; set; }
     public string? SenderAddress { get; set; }

@@ -2,7 +2,7 @@ using Application.Common.Interfaces;
 using Application.Common.Mappings;
 using Application.Common.Models;
 
-namespace Application.Order.Queries.GetOrdersWithPagination;
+namespace Application.Features.Orders.Queries.GetOrders;
 
 public class GetOrdersWithPaginationQuery: IRequest<PaginatedList<OrderDto>>
 {

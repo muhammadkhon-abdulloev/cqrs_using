@@ -1,9 +1,8 @@
 using Application.Common.Interfaces;
 using Application.Common.Mappings;
 using Application.Common.Models;
-using Application.Order.Queries.GetOrdersWithPagination;
 
-namespace Application.City.Queries.GetCitiesWithPagination;
+namespace Application.City.Queries.GetCities;
 
 public class GetCitiesWithPaginationQuery: IRequest<PaginatedList<CityDto>>
 {

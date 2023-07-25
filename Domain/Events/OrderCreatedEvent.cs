@@ -10,5 +10,5 @@ public class OrderCreatedEvent: BaseEvent
         Order = order;
     }
 
-    public Order Order { get; }
+    public Order Order { get; init; }
 }

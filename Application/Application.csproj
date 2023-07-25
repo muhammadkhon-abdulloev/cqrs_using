@@ -32,7 +32,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="City\Queries\" />
+      <Folder Include="Features\" />
     </ItemGroup>
 
 </Project>

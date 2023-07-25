@@ -39,7 +39,8 @@ public class CreateOrderCommandHandler: IRequestHandler<CreateOrderCommand, int>
             // ReceiverCity = _mapper.Map<Domain.Entities.City>(request.ReceiverCity),
             ReceiverAddress = request.ReceiverAddress,
             CargoWeight = request.CargoWeight,
-            PickupDate = request.PickupDate
+            PickupDate = request.PickupDate,
+            CreatedAt = DateTime.UtcNow
         };
 
         entity.AddDomainEvent(new OrderCreatedEvent(entity));

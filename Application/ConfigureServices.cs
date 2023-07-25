@@ -1,4 +1,5 @@
 using System.Reflection;
+using Application.Common.Behaviours;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Application;
@@ -12,7 +13,7 @@ public static class ConfigureServices
         services.AddMediatR(cfg =>
         {
             cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
-            // cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(OrderBehaviour<,>));
+            cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
         });
         
         return services;

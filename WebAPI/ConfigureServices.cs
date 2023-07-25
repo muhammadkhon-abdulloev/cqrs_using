@@ -1,3 +1,5 @@
+using ZymLabs.NSwag.FluentValidation;
+
 namespace WebAPI;
 
 public static class ConfigureServices
@@ -14,13 +16,13 @@ public static class ConfigureServices
             options.SubstituteApiVersionInUrl = true;
         });
         
-        // services.AddScoped(provider =>
-        // {
-        //     var validationRules = provider.GetService<IEnumerable<FluentValidationRule>>();
-        //     var loggerFactory = provider.GetService<ILoggerFactory>();
-        //
-        //     return new FluentValidationSchemaProcessor(provider, validationRules, loggerFactory);
-        // });
+        services.AddScoped(provider =>
+        {
+            var validationRules = provider.GetService<IEnumerable<FluentValidationRule>>();
+            var loggerFactory = provider.GetService<ILoggerFactory>();
+        
+            return new FluentValidationSchemaProcessor(provider, validationRules, loggerFactory);
+        });
         
         return services;
     }

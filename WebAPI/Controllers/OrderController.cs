@@ -27,7 +27,7 @@ public class OrderController
     [HttpPost]
     [Produces("application/json")]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Task<int>))]
-    public async Task<int> CreateOrder(ISender sender, [AsParameters] CreateOrderCommand query)
+    public async Task<int> CreateOrder(ISender sender, CreateOrderCommand query)
     {
         return await sender.Send(query);
     }

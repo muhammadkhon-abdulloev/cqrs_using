@@ -1,6 +1,5 @@
 using Application;
 using Infrastructure;
-using Infrastructure.Data;
 using Serilog;
 using WebAPI;
 
@@ -9,7 +8,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddWebServices();
-builder.Logging.AddSerilog();
+
+using var log = new LoggerConfiguration() //new
+    .WriteTo.Console()
+    .CreateLogger();
+
+Log.Logger = log;
+
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 

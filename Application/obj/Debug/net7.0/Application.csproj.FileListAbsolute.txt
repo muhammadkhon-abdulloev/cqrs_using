@@ -1,0 +1,17 @@
+/Users/muhammadkhon/projects/Kargo/Application/bin/Debug/net7.0/Application.deps.json
+/Users/muhammadkhon/projects/Kargo/Application/bin/Debug/net7.0/Application.dll
+/Users/muhammadkhon/projects/Kargo/Application/bin/Debug/net7.0/Application.pdb
+/Users/muhammadkhon/projects/Kargo/Application/bin/Debug/net7.0/Domain.dll
+/Users/muhammadkhon/projects/Kargo/Application/bin/Debug/net7.0/Domain.pdb
+/Users/muhammadkhon/projects/Kargo/Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache
+/Users/muhammadkhon/projects/Kargo/Application/obj/Debug/net7.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/muhammadkhon/projects/Kargo/Application/obj/Debug/net7.0/Application.AssemblyInfoInputs.cache
+/Users/muhammadkhon/projects/Kargo/Application/obj/Debug/net7.0/Application.AssemblyInfo.cs
+/Users/muhammadkhon/projects/Kargo/Application/obj/Debug/net7.0/Application.csproj.CoreCompileInputs.cache
+/Users/muhammadkhon/projects/Kargo/Application/obj/Debug/net7.0/Application.csproj.CopyComplete
+/Users/muhammadkhon/projects/Kargo/Application/obj/Debug/net7.0/Application.dll
+/Users/muhammadkhon/projects/Kargo/Application/obj/Debug/net7.0/refint/Application.dll
+/Users/muhammadkhon/projects/Kargo/Application/obj/Debug/net7.0/Application.pdb
+/Users/muhammadkhon/projects/Kargo/Application/obj/Debug/net7.0/ref/Application.dll
+/Users/muhammadkhon/projects/Kargo/Application/bin/Debug/net7.0/Application.runtimeconfig.json
+/Users/muhammadkhon/projects/Kargo/Application/obj/Debug/net7.0/Application.genruntimeconfig.cache

@@ -1,5 +1,4 @@
 using System.Reflection;
-using Application.Common.Behaviours;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Application;

@@ -8,7 +8,7 @@ public class OrderDto
     public string? ReceiverAddress { get; init; }
     public double CargoWeight { get; init; }
     public DateOnly PickupDate { get; init; }
-    
+    public DateTime CreatedAt { get; init; }
     private class Mapping : Profile
     {
         public Mapping()

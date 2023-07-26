@@ -2,7 +2,6 @@ using Domain.Common;
 
 namespace Domain.Entities;
 
-[Table("order")]
 public class Order: BaseAuditableEntity
 {
     public int SenderCityId { get; set; }

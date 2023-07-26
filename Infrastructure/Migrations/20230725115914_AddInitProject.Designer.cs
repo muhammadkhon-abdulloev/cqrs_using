@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230725114819_AddInitProject")]
+    [Migration("20230725115914_AddInitProject")]
     partial class AddInitProject
     {
         /// <inheritdoc />
@@ -37,7 +37,7 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamptz")
-                        .HasDefaultValue(new DateTime(2023, 7, 25, 11, 48, 19, 312, DateTimeKind.Utc).AddTicks(9510))
+                        .HasDefaultValue(new DateTime(2023, 7, 25, 11, 59, 14, 789, DateTimeKind.Utc).AddTicks(6930))
                         .HasColumnName("created_at");
 
                     b.Property<string>("Name")
@@ -49,7 +49,7 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("Id")
                         .IsUnique()
-                        .HasDatabaseName("OrderIdIndex");
+                        .HasDatabaseName("CityIdIndex");
 
                     b.ToTable("city");
                 });
@@ -70,7 +70,7 @@ namespace Infrastructure.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamptz")
-                        .HasDefaultValue(new DateTime(2023, 7, 25, 16, 48, 19, 314, DateTimeKind.Local).AddTicks(2420))
+                        .HasDefaultValue(new DateTime(2023, 7, 25, 11, 59, 14, 790, DateTimeKind.Utc).AddTicks(8090))
                         .HasColumnName("created_at");
 
                     b.Property<DateOnly>("PickupDate")

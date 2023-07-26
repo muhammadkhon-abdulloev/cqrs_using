@@ -1,15 +1,13 @@
 using Application.Common.Models;
 using Application.Features.Orders.Commands.CreateOrder;
 using Application.Features.Orders.Queries.GetOrders;
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;
 
 [ApiController]
 [Route("/api/v{version:apiVersion}/order")]
 [ApiVersion("1.0")]
-public class OrderController
+public class OrderController: ControllerBase
 {
     public OrderController()
     {}

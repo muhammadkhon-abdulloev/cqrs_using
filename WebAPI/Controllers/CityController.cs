@@ -1,15 +1,14 @@
 using Application.City.Queries.GetCities;
 using Application.Common.Models;
 using Application.Features.Cities.Commands.CreateCity;
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
+
 
 namespace WebAPI.Controllers;
 
 [ApiController]
 [Route("/api/v{version:apiVersion}/city")]
 [ApiVersion("1.0")]
-public class CityController
+public class CityController: ControllerBase
 {
     public CityController()
     {}
@@ -27,6 +26,7 @@ public class CityController
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Task<int>))]
     public async Task<int> CreateCity(ISender sender, [AsParameters] CreateCityCommand query)
     {
+        
         return await sender.Send(query);
     }
     

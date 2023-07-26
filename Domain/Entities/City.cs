@@ -2,7 +2,6 @@ using Domain.Common;
 
 namespace Domain.Entities;
 
-[Table("city")]
 public class City: BaseAuditableEntity
 {
     public string? Name { get; set; }

@@ -19,7 +19,7 @@ namespace Infrastructure.Migrations
                     id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
-                    created_at = table.Column<DateTime>(type: "timestamptz", nullable: false, defaultValue: new DateTime(2023, 7, 25, 11, 48, 19, 312, DateTimeKind.Utc).AddTicks(9510))
+                    created_at = table.Column<DateTime>(type: "timestamptz", nullable: false, defaultValue: new DateTime(2023, 7, 25, 11, 59, 14, 789, DateTimeKind.Utc).AddTicks(6930))
                 },
                 constraints: table =>
                 {
@@ -38,7 +38,7 @@ namespace Infrastructure.Migrations
                     receiver_address = table.Column<string>(type: "text", nullable: false),
                     cargo_weight = table.Column<double>(type: "numeric", nullable: false),
                     pickup_date = table.Column<DateOnly>(type: "date", nullable: false),
-                    created_at = table.Column<DateTime>(type: "timestamptz", nullable: false, defaultValue: new DateTime(2023, 7, 25, 16, 48, 19, 314, DateTimeKind.Local).AddTicks(2420))
+                    created_at = table.Column<DateTime>(type: "timestamptz", nullable: false, defaultValue: new DateTime(2023, 7, 25, 11, 59, 14, 790, DateTimeKind.Utc).AddTicks(8090))
                 },
                 constraints: table =>
                 {
@@ -58,7 +58,7 @@ namespace Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "OrderIdIndex",
+                name: "CityIdIndex",
                 table: "city",
                 column: "id",
                 unique: true);

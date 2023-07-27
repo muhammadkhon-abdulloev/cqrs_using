@@ -1,4 +1,5 @@
 using Application.Common.Interfaces;
+using Ardalis.GuardClauses;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -15,6 +16,7 @@ public static class ConfigureServices
         )
     {
         var connectionString = configuration.GetConnectionString("DefaultConnection");
+        Guard.Against.NullOrEmpty(connectionString, message:"Missing connection string");
         
         services.AddDbContext<ApplicationDbContext>((sp, options) =>
         {

@@ -1,6 +1,6 @@
 using ZymLabs.NSwag.FluentValidation;
 
-namespace WebAPI;
+namespace Api;
 
 public static class ConfigureServices
 {

@@ -2,7 +2,7 @@ using Application.Common.Models;
 using Application.Features.Orders.Commands.CreateOrder;
 using Application.Features.Orders.Queries.GetOrders;
 
-namespace WebAPI.Controllers;
+namespace Api.Controllers;
 
 [ApiController]
 [Route("/api/v{version:apiVersion}/order")]

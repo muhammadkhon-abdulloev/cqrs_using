@@ -1,9 +1,9 @@
 using Application.City.Queries.GetCities;
 using Application.Common.Models;
 using Application.Features.Cities.Commands.CreateCity;
+using Application.Features.Cities.Commands.UpdateCity;
 
-
-namespace WebAPI.Controllers;
+namespace Api.Controllers;
 
 [ApiController]
 [Route("/api/v{version:apiVersion}/city")]
@@ -28,6 +28,15 @@ public class CityController: ControllerBase
     {
         
         return await sender.Send(query);
+    }
+    
+    [HttpPut]
+    [Produces("application/json")]
+    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Task<int>))]
+    public async Task<IResult> UpdateCityById(ISender sender, [AsParameters] UpdateCityCommand query)
+    {
+        var updatedId = await sender.Send(query);
+        return updatedId == query.Id ? Results.Ok() : Results.NoContent();
     }
     
 }
